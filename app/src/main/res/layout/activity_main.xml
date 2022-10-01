@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/full_name_label"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Full Name"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@id/full_name_text_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/full_name_text_box"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:hint="i.e. Ian Watson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/full_name_label"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/province_label"
+        android:text="Province"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/full_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="17dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/province_drop_down"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/province_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_text_box"
+        android:layout_marginEnd="60dp"/>
+
+    <TextView
+        android:id="@+id/qualification_label"
+        android:text="Qualification"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/province_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="85dp" />
+
+    <RadioGroup
+        android:id="@+id/qualification_radio_group"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        app:layout_constraintStart_toEndOf="@id/qualification_label"
+        app:layout_constraintTop_toBottomOf="@id/province_drop_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp">
+        <RadioButton
+            android:id="@+id/associates_radio"
+            android:text="Associates"
+            android:layout_width="200dp"
+            android:layout_height="40dp"/>
+        <RadioButton
+            android:id="@+id/bachelors_radio"
+            android:text="Bachelors"
+            android:layout_width="200dp"
+            android:layout_height="40dp"/>
+        <RadioButton
+            android:id="@+id/masters_radio"
+            android:text="Masters"
+            android:layout_width="200dp"
+            android:layout_height="40dp"/>
+        <RadioButton
+            android:id="@+id/Doctorate_radio"
+            android:text="Doctorate"
+            android:layout_width="200dp"
+            android:layout_height="40dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/hobby_label"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Hobby"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qualification_label"
+        android:layout_marginTop="87dp"
+        android:layout_marginStart="17dp" />
+
+    <EditText
+        android:id="@+id/hobby_text_box"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="i.e. Video Games"
+        app:layout_constraintStart_toEndOf="@id/hobby_label"
+        app:layout_constraintTop_toBottomOf="@id/qualification_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/dream_job_label"
+        android:text="Dream Job"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hobby_label"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/dream_job_text_box"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="i.e. Software Engineer"
+        app:layout_constraintTop_toBottomOf="@id/hobby_text_box"
+        app:layout_constraintStart_toEndOf="@id/dream_job_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"/>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

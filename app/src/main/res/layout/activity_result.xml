@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/full_name_label"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textEnd"
+        android:paddingTop="10dp"
+        android:textColor="@color/deep_sea"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/full_name_result"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/full_name_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/province_label"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Province"
+        android:textAlignment="textEnd"
+        android:paddingTop="10dp"
+        android:textColor="@color/vibrant_red"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/full_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/province_result"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:paddingTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintStart_toEndOf="@id/province_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_result"/>
+
+    <TextView
+        android:id="@+id/qualification_label"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Qualification"
+        android:textAlignment="textEnd"
+        android:paddingTop="10dp"
+        android:textColor="@color/orange_orange"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/province_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/qualification_result"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/qualification_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/province_result"/>
+
+    <TextView
+        android:id="@+id/hobby_label"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Hobby"
+        android:textAlignment="textEnd"
+        android:paddingTop="10dp"
+        android:textColor="@color/mango_orange"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/qualification_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/hobby_result"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/hobby_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qualification_result"/>
+
+    <TextView
+        android:id="@+id/dream_job_label"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Dream Job"
+        android:textAlignment="textEnd"
+        android:paddingTop="10dp"
+        android:textColor="@color/quartz_beige"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/hobby_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/dream_job_result"
+        android:text="Full Name"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/dream_job_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hobby_result"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AbrahamAlfredBabu_MAPD711_Ex1</string>
+    <string-array name="provinces_array">
+        <item>Alberta</item>
+        <item>British Colombia</item>
+        <item>Manitoba</item>
+        <item>New Burnswick</item>
+        <item>Newfoundland and Labrador</item>
+        <item>Northwest Territories</item>
+        <item>Nova Scotia</item>
+        <item>Nunavut</item>
+        <item>Ontario</item>
+        <item>Prince Edward Island</item>
+        <item>Quebec</item>
+        <item>Saskatchewan</item>
+        <item>Yukon</item>
+    </string-array>
+</resources>
